@@ -11,7 +11,7 @@ Route::get('/profesores', function () {
     return view('profesores');
 });
 
-Route::get('/alumnos', [AlumnoController::class, 'index'])->middleware('verificar.acceso');
+Route::get('/alumnos', [AlumnoController::class, 'index']);
 Route::post('/alumnos', [AlumnoController::class, 'store']);
 Route::put('/alumnos/{alumno}', [AlumnoController::class, 'update']);
 Route::patch('/alumnos/{alumno}/activo', [AlumnoController::class, 'toggleActivo']);

@@ -30,8 +30,7 @@ class AlumnoController extends Controller
         Alumno::create($data);
 
         return redirect('/alumnos')
-            ->with('success', 'Alumno registrado correctamente.')
-            ->with('felicitacion', 'felicidades, pudiste registrar'.$data['nombre']);
+            ->with('success', 'Alumno registrado correctamente.');
     }
 
     public function update(Request $request, Alumno $alumno)
