@@ -14,7 +14,6 @@ return new class extends Migration
             $table->string('nombre');
             $table->string('apellido');
             $table->integer('age')->unsigned();
-            $table->string('sexo');
             $table->string('email')->unique();
             $table->boolean('activo')->default(true);
             $table->timestamps();
